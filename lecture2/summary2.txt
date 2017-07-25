@@ -1,0 +1,52 @@
+Table :
+      Thead
+            Tr - Row
+            Th - Header Data
+      Tbody
+         Tr - Row
+         Td - Data Cell * Table Data
+      Attributes :
+         Border
+         CellPadding
+         CellSpacing
+       Cell spanning
+            RowSpan : it will go across rows ( Merge Rows)
+
+Form :
+    Text Field, Text area, DropDown, Radio, Radio groups, Labels
+    Form Fields:
+            Text field
+            Select
+
+HTTP ??
+    Hyper Text Transfer Protocol :
+    Stateless Protocol.
+
+    HttpRequest:
+          Header : Google.com?q=satyam , GET, Param Header
+          Payload
+
+     POST :  Google.com, POST
+     Payload  : Data
+
+
+    Pros                         Cons :
+    GET : Faster                POST :SLower
+    Not Secure                  Secure
+    Limited Data                UnLimited Data
+
+GET, POST, PUT, DELETE, OPTIONS
+
+           GET : Fetching | Request Body goes Header
+
+Transfer HTML from Remote to Client
+
+
+
+
+Assignment 2:
+
+            Create the same profile page using Tables
+            create a 3 x 3 Table.
+
+
