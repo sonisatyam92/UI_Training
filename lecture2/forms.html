@@ -1,20 +1,102 @@
 <html>
 <body>
-    <form>
-        <label>Name:</label>
+    <form action="xyz">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                    <label>Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="firstName" placeholder="Eg: Satyam Soni" value=""   />
+                    </td>
+                </tr>
 
-        <input type="text" name="firstName" placeholder="Eg: Satyam Soni" value="" disabled  />
+                <tr>
+                    <td>
+                        <label>Password :</label>
+                    </td>
+                    <td>
+                        <input type="password" name="mypassword"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Hidden :</label>
+                    </td>
+                    <td>
+                        <input type="hidden" name="hiddenFld" value="defaultvalforhidden" />
+                    </td>
+                </tr>
 
-        <select name="option">
-            <option value="1" >First</option>
-            <option value="2" >Second</option>
-            <option value="3" >Three</option>
-            <option value="4" >Four</option>
-            <option value="5" >Five</option>
-        </select>
+                <tr>
+                    <td>
+                        Select DropDown
+                    </td>
+                    <td>
+                        <select name="option">
+                            <option value="1" >First</option>
+                            <option value="2" >Second</option>
+                            <option value="3" >Three</option>
+                            <option value="4" >Four</option>
+                            <option value="5" >Five</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Checkbox
+                    </td>
+                    <td>
+                        <input type="checkbox" checked name="checkbox" value="mycheck"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Radio
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" checked  value="radioisOn"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Radio Group
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="male"  checked value="male" /> Male
+                        <input type="radio" name="gender" id="female" value="female"/> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        File Upload
+                    </td>
+                    <td>
+                        <input type="file" name="File" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       Button
+                    </td>
+                    <td>
+                        <button>Button1</button>
+                        <input type="button" value="Button">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
 
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit" />
+                    </td>
+                </tr>
 
-        <input type="submit" value="Submit" />
+            </tbody>
+        </table>
+
     </form>
 </body>
 </html>
