@@ -1,0 +1,35 @@
+/*
+                CSS goes here...
+            */
+body {
+
+}
+html body p{
+    text-decoration: underline;
+    font-weight: bold;
+}
+#id2{
+    font-style: italic;
+}
+
+.id-class{
+    font-style: oblique;
+    font-size: 20px;
+}
+
+.font-black{
+    color: black;
+}
+
+.font-green{
+    color: lightgreen;
+}
+
+.font-red{
+    //color: red;
+    color:rgb(100,20,0);
+
+}
+.font-yellow{
+    color:#80B371;
+}
