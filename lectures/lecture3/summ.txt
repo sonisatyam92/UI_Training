@@ -1,0 +1,47 @@
+I Frames :
+
+ including embeded Html into HTML page
+
+
+
+
+ CSS:
+   Cascading Style Sheet
+    Designing web page
+
+    HTML Style
+
+       Include CSS :
+        3 ways :
+           1. Embedding on HTML
+           2. Linking by source
+           3. Inline Css.
+
+
+           Inline Css > Emded > Link
+
+
+
+        CSS
+           Elements
+           Id (#)
+           Classes (.)
+
+
+           Assignment :
+
+            Table
+                Green, Red, Blue, Black
+                6 cols
+                4 rows
+                4x6 grid
+
+                Do it by Class
+
+             DarkGreen > LightGreen
+             Brown > Red;
+             Dark Blue > Light Blue
+             Black > white
+
+
+             Can we Color Grid
