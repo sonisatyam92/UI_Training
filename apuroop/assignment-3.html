@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+    <!--Page Head-->
+    <head>
+
+        <!--Title of page displayed on tab-->
+        <title>
+            XYZ Inc. EIP 2017
+        </title>
+
+    </head>
+
+    <!--Body of the page-->
+    <body >
+        <article>
+
+            <!--Heading of the page-->
+            <header>
+                <h1>Employee Portal 2017</h1>
+            </header>
+
+            <!--Section with form-->
+            <form>
+
+                <!--Form for employee info-->
+                <table>
+
+                    <!--Placing inputs in rows and columns for uniformity-->
+                    <!--First Name-->
+                    <tr>
+                        <td>
+                            <label>Employee's First Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="firstName" placeholder="First Name" value="John" />
+                        </td>
+                    </tr>
+
+                    <!--Last Name-->
+                    <tr>
+                        <td>
+                            <label>Employee's Last Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="lastName" name="lastName" placeholder="Last Name" value="Doe"/>
+                        </td>
+                    </tr>
+
+                    <!--Phone number-->
+                    <tr>
+                        <td>
+                            <label>Employee's Phone Number:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="phone" name="phone" placeholder="Enter Phone Number" value="1234567890"/>
+                        </td>
+                    </tr>
+
+                    <!--Gender selection-->
+                    <tr>
+                        <td>
+                            <label>Employee's Gender:</label>
+                        </td>
+                        <td>
+
+                            <!--Male-->
+                            <label for="male" >Male:</label>
+                            <input type="radio" id="male" name="gender"/>
+
+                            <!--Female-->
+                            <label for="female" >Female:</label>
+                            <input type="radio" id="female" name="gender"/>
+
+                            <!--Other-->
+                            <label for="other" >Other:</label>
+                            <input type="radio" id="other" name="gender"/>
+                        </td>
+                    </tr>
+
+                    <!--Employment period-->
+
+                    <tr>
+                        <td>
+                            <label>Employment Period:</label>
+                        </td>
+                            <td>
+                                <select name="option">
+                                    <option value="1">New (0-12 months)</option>
+                                    <option value="2">Junior (1-5 years)</option>
+                                    <option value="3">Senior (5+ years)</option>
+                                </select>
+                            </td>
+                    </tr>
+
+                    <!--Employment Status-->
+                    <tr>
+                        <td>
+                            <label for="fullTime" >Full Time Employee:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="fullTime" name="fullTime" />
+                        </td>
+
+                        <td>
+                            <label for="overTime" >Overtime:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="overTime" name="overTime" />
+                        </td>
+                    </tr>
+
+                    <!--Employee email-->
+                    <tr>
+                        <td>
+                            <label for="email">Employee's email:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="john_doe@example.com"/>
+                        </td>
+                    </tr>
+
+                    <!--Password creation-->
+                    <tr>
+                        <td>
+                            <!--New password-->
+                            <label for="pwd">New Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="pwd" name="password" />
+                        </td>
+
+                        <td>
+                            <!--Confirm Password-->
+                            <label for="confPwd">Confirm Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="confPwd" name="confPassword" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!--Resume upload-->
+                        <td>
+                            <label>Upload latest Resume</label>
+                        </td>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+
+                    <!--Submit and Reset buttons-->
+                    <tr>
+                        <td align="left">
+                            <!--Submit button-->
+                            <button type="submit" id="submit">
+                                <span>Submit</span>
+                            </button>
+                        <!--</td>
+
+                        <td align="left">-->
+                            <!--Reset Button-->
+                            <button type="reset" id="reset">
+                                <span>Reset all fields</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <br>
+
+                </table>
+            </form>
+
+            <!--Footer of the page-->
+            <footer>
+                <p>All rights inclusive of XYZ Inc..</p>
+            </footer>
+        </article>
+    </body>
+</html>
