@@ -1,0 +1,126 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body>
+
+<div>
+
+    <form action="xyz">
+        <fieldset>
+            <legend  class="legend">Login Info</legend>
+            <table >
+                <tbody>
+                <tr>
+                    <td>
+                        <label class="form-control">Name:</label>
+                    </td>
+                    <td>
+                        <input class="form-control border-field" type="text" name="firstName" placeholder="Eg: Satyam Soni" value=""   />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class="form-control">Password :</label>
+                    </td>
+                    <td>
+                        <input class="form-control border-field" type="password" name="mypassword"  />
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend  class="legend">User Info</legend>
+            <table >
+                <tbody>
+                <tr>
+                    <td>
+                        <label>Hidden :</label>
+                    </td>
+                    <td>
+                        <input class="form-control" type="hidden" name="hiddenFld" value="defaultvalforhidden" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Select DropDown
+                    </td>
+                    <td>
+                        <select name="option" class="form-control">
+                            <option value="1" >First</option>
+                            <option value="2" >Second</option>
+                            <option value="3" >Three</option>
+                            <option value="4" >Four</option>
+                            <option value="5" >Five</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Checkbox
+                    </td>
+                    <td>
+                        <input type="checkbox" class="form-control" checked name="checkbox" value="mycheck"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Radio
+                    </td>
+                    <td>
+                        <input type="radio" name="radio" checked class="form-control"  value="radioisOn"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Radio Group
+                    </td>
+                    <td>
+                        <input class="form-control" type="radio" name="gender" id="male"  checked value="male" /> Male
+                        <input type="radio" name="gender" id="female" value="female"/> Female
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <table>
+
+
+            <tr>
+                <td>
+                    File Upload
+                </td>
+                <td>
+                    <input type="file" name="File" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Button
+                </td>
+                <td>
+                    <button class="btn">Button1</button>
+                    <input type="button" value="Button">
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+
+    </form>
+</div>
+ Test
+</body>
+</html>

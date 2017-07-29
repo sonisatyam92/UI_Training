@@ -1,0 +1,44 @@
+form .legend {
+    font-size : 20px;
+    font-weight: bold;
+    color: red;
+}
+form fieldset{
+    width : 20%;
+}
+.form-control{
+    max-width: 150px;
+}
+.border-field {
+    border : #05e1ff 1px solid;
+    border-radius: 5px;
+    height : 25px;
+}
+
+.border-field:focus {
+    border : #ff300b 3px solid;
+    border-radius: 5px;
+}
+
+.form-control:hover{
+    font-size: 18px;
+}
+.btn{
+    background-color: darkblue;
+    color: white;
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 3px;
+}
+.btn:hover{
+    background: lightgray;
+    color: black;
+}
+html{
+    /*min-height: 1000px;*/
+    margin : 10px 10px 5px 10px;
+    border : 2px solid #000000;
+    padding: 30px 20px;
+    font-size: 15px;
+}
+
