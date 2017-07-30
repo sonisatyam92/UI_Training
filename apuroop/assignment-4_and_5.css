@@ -1,3 +1,26 @@
+/*Assignment 5*/
+.header{
+    position: fixed;
+    background: #d0d5ff;
+    width: 500px;
+    height: 140px;
+    display: block;
+    padding: 10px;
+    left: 150px;
+}
+
+.footer{
+    position: fixed;
+    width: 500px;
+    height: 100px;
+    left:150px;
+    top: 800px;
+    background: #d0d5ff;
+}
+
+.content{
+    margin-top: 120px;
+}
 
 
 /*Assignment 4*/
