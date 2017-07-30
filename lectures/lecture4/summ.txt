@@ -1,1 +1,6 @@
 Lecture 4
+
+
+ Assignment :
+
+      Can you design a webpage which has a fix bar like facebook
