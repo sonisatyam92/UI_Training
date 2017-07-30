@@ -1,0 +1,111 @@
+
+
+/*Assignment 4*/
+    /*Row1*/
+
+#a4{
+    border: 2px solid #000;
+
+}
+
+.G1{
+    background-color: #040;
+    padding: 10px;
+}
+.G2{
+    background-color: #060;
+    padding: 10px;
+}
+.G3{
+    background-color: #080;
+    padding: 10px;
+}
+.G4{
+    background-color: #0a0;
+    padding: 10px;
+}
+.G5{
+    background-color: #0c0;
+    padding: 10px;
+}
+.G6{
+    background-color: #0e0;
+    padding: 10px;
+}
+
+
+.BR1{
+    background-color: #00f;
+    padding: 10px;
+}
+.BR2{
+    background-color: #22f;
+    padding: 10px;
+}
+.BR3{
+    background-color: #44f;
+    padding: 10px;
+}
+.BR4{
+    background-color: #f66;
+    padding: 10px;
+}
+.BR5{
+    background-color: #f22;
+    padding: 10px;
+}
+.BR6{
+    background-color: #e00;
+    padding: 10px;
+}
+
+
+.B1{
+    background-color: #00f;
+    padding: 10px;
+}
+.B2{
+    background-color: #22f;
+    padding: 10px;
+}
+.B3{
+    background-color: #55f;
+    padding: 10px;
+}
+.B4{
+    background-color: #77f;
+    padding: 10px;
+}
+.B5{
+    background-color: #99f;
+    padding: 10px;
+}
+.B6{
+    background-color: #ccf;
+    padding: 10px;
+}
+
+.BW1{
+    background-color: #000;
+    padding: 10px;
+}
+.BW2{
+    background-color: #333;
+    padding: 10px;
+}
+.BW3{
+    background-color: #666;
+    padding: 10px;
+}
+.BW4{
+    background-color: #aaa;
+    padding: 10px;
+}
+.BW5{
+    background-color: #ccc;
+    padding: 10px;
+}
+.BW6{
+    background-color: #fff;
+    padding: 10px;
+}
