@@ -19,8 +19,8 @@ border-radius:5px;}
 .wrap input{width:400px;
              height:25px;
 			 margin-bottom:5px;
-			 border=1px solid silver;
-padding=5px;}
+			 border:1px solid silver;
+padding:5px;}
 		
 .wrap .btn-login{width:400px;
                 height:25px;
