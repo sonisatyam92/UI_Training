@@ -1,0 +1,35 @@
+body{ background-color: #c3c3c3;
+      margin:0;
+       padding:0;
+    border:0;
+    height:1500px;
+
+     }
+#main_container{height:640px;
+                position:relative;
+
+                 }
+
+#header{
+    width: 100%;
+    height:82px;
+    background: #474a82;
+    box-shadow:2px 2px 2px 2px;
+
+
+    position:relative;
+    }
+#fb_logo{color:white;
+          font-size:40px;
+           line-height:20px;
+           font-family:comic sans ms;
+            font-weight:bold;
+            position:relative;
+left:200px;
+top:40px;}
+.login_form{float:right;
+             color:white;
+position:relative;
+right:180px;
+top:-22px;}
+
