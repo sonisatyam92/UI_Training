@@ -1,7 +1,3 @@
-body{
-    margin:0;
-}
-
 .login-main{
     background:red;
     width:100%;
@@ -12,67 +8,10 @@ body{
     background: linear-gradient(-90deg, red, yellow);
 
 }
-
-.login-box{
-    background: #fff;
-    width: 30%;
-    height: 50%;
-    position: absolute;
-    align-content: center;
-    margin : 10% 0 0 31%;
-    padding : 20px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-
-
-}
-.form{
-    width : 100%;
-    align-items: center;
-    align-self: center;
-    alignment: center;
-    align-content: center;
-    padding-left:0px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-.form-ele {
-    width: 90%;
-    height: 45px;
-    margin: 20px 10px 20px 10px;
-    padding: 20px;
-    outline: 0;
-    background: #f2f2f2;
-    border: 0;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-.form-btn{
-    color: white;
-    width: 90%;
-    margin:20px 10px ;
-    text-transform: uppercase;
-    outline: 0;
-    background: red;
-    border: 0;
-    padding: 15px;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-
-}
-.register{
-    color:darkgray;
-    margin-left: 60px;
-}
-.create-link{
-    cursor: pointer;
-    color : #ff3126;
-    font-weight: bold;
-}
 .header {
     margin-top: -30px;
-    background: red;
-    height: 40px;
+    background: green;
+    height: 90px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .split-line{
@@ -85,12 +24,88 @@ body{
 
     color: #fff;
     font-weight: 800;
-    padding-left: 20px;
+    padding-left: 60px;
     font-size: 30px;
-    line-height: 40px;
+    line-height: 70px;
     word-spacing: 5px;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
+    justify-content: left;
+    justify-items: left;
+    text-align: left;
+
+}
+.content-left{
+    color: #fff;
+    font-weight: 200;
+    padding-left: 60px;
+    font-size: 20px;
+    line-height: 70px;
+    word-spacing: 5px;
+    justify-content: right;
+    justify-items: right;
+    text-align: right;
+    margin-top:-100px;
+    margin-right:600px;
+}
+.form-ele1 {
+
+    font-size: 14px;
+    justify-content: left;
+    justify-items: left;
+    text-align: left;
+    margin-bottom:75px;
+    margin-left:700px;
+}
+.login-box{
+    background: #fff;
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    align-content: center;
+    margin : 10% 0 0 33%;
+    padding : 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+
+}
+.form{
+    width : 100%;
+    align-items: center;
+    align-self: center;
+    alignment: center;
+    align-content: center;
+    padding-left:0px;
+
+}
+.form-ele {
+    width: 90%;
+    height: 45px;
+    margin: 5px 10px 5px 10px;
+    padding: 20px;
+    outline: 0;
+    background: rgba(207, 197, 209, 0.7);
+    border: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form-btn{
+    color: white;
+    width: 90%;
+    margin:20px 20px ;
+    text-transform: uppercase;
+    outline: 0;
+    background: red;
+    border: 0;
+    padding: 15px;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+
+}
+.register{
+    color:orangered;
+    margin-left: 170px;
+    font-size: 20px;
+    margin-top:10px;
 
 }
