@@ -68,7 +68,7 @@
 
 }
 .form{
-    width : 100%;
+    width : 150%;
     align-items: center;
     align-self: center;
     alignment: center;
@@ -77,9 +77,9 @@
 
 }
 .form-ele {
-    width: 90%;
+    width: 60%;
     height: 45px;
-    margin: 5px 10px 5px 10px;
+    margin: 5px 10px 0px 10px;
     padding: 20px;
     outline: 0;
     background: rgba(207, 197, 209, 0.7);
@@ -89,7 +89,7 @@
 }
 .form-btn{
     color: white;
-    width: 90%;
+    width: 60%;
     margin:20px 20px ;
     text-transform: uppercase;
     outline: 0;
@@ -105,7 +105,21 @@
 .register{
     color:orangered;
     margin-left: 170px;
-    font-size: 20px;
-    margin-top:10px;
+    font-weight:bold;
 
+}
+.register1{
+    color:orangered;
+    margin-left: 120px;
+    font-weight:bold;
+
+}
+.create-link{
+    cursor: pointer;
+    color : #ff4b3f;
+    font-weight: bold;
+    margin-top:150px;
+}
+.create-link:hover{
+    text-decoration: underline;
 }

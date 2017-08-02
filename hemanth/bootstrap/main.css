@@ -5,13 +5,13 @@
     margin:0;
     padding:0;
     border:none;
-    background: linear-gradient(-90deg, blue, aliceblue);
+    background: linear-gradient(-90deg, rebeccapurple, darkolivegreen);
 
 }
 .login-box{
     background: #fff;
     width: 30%;
-    height: 50%;
+    height: 60%;
     position: absolute;
     align-content: center;
     margin : 10% 0 0 33%;
@@ -21,11 +21,48 @@
 
 }
 .register{
-    color:blueviolet;
-    margin-left: 120px;
+    color:black;
+    margin-left: 150px;
+    font-weight:bold;
+    font-size: medium;
 
-    margin-top:10px;
+}
+.header {
+    margin-top: -10px;
+    background: purple;
+    height: 90px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.split-line{
+    height: 3px;
+    background: lightgray;
+    margin: 0;
+    padding: 0;
+}
+.head-line{
 
+    color: #fff;
+    font-weight: 800;
+    padding-left: 60px;
+    font-size: 30px;
+    line-height: 70px;
+    word-spacing: 5px;
+    justify-content: left;
+    justify-items: left;
+    text-align: left;
 
+}
 
+.content-right{
+    color: #fff;
+    font-weight: 200;
+    padding-left: 60px;
+    font-size: 20px;
+    line-height: 70px;
+    word-spacing: 5px;
+    justify-content: right;
+    justify-items: right;
+    text-align: right;
+    margin-top:-80px;
+    margin-right:30px;
 }
