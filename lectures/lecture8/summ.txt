@@ -1,0 +1,21 @@
+Alert :
+
+     Success : ( Green)
+     Info : (Blue)
+     Warning : (Yellow)
+     Error : (Red)
+
+
+     Assignment 9 : You use
+
+     Table
+     Images
+     Modal
+     Tooltips
+     Form
+     Tabs
+     Menu
+     Icon
+     Button
+     Panel
+

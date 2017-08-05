@@ -1,0 +1,21 @@
+.table-hover > tbody > tr:hover {
+    background-color: darkgray
+}
+.custom-alert-danger{
+    background: red;
+    color:white;;
+}
+.btn-danger-custom:hover{
+    background: darkgray;
+}
+.mybadge{
+    min-width: 10px;
+    display: inline;
+    padding:5px 7px;
+    white-space: nowrap;
+    background: black;
+    color:lightgray;
+    line-height: 9px;
+    font-weight: bolder;
+    border-radius: 20px;
+}
