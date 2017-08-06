@@ -1,0 +1,48 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css"/>
+<link rel="stylesheet" href="main.css"/>
+<script src="bootstrap.min.js"></script>
+<script src="main.js"></script>
+</html>
+<body>
+    <div class="container calculator">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <p class="panel-heading text-left">Calculator</p>
+                    <input class="form-control " value="" id="cal-panel" readonly />
+                    <div class="panel-body">
+                        <div >
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">1</button>
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">2</button>
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">3</button>
+                        </div>
+                        <div >
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">4</button>
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">5</button>
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">6</button>
+                        </div>
+                        <div >
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">7</button>
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">8</button>
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">9</button>
+                        </div>
+                        <div >
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">.</button>
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">0</button>
+                            <button class="col-sm-3 btn btn-default" onclick="enterVal(this)">C</button>
+                        </div>
+                        <div class="clearfix" >
+                            <button class="col-sm-3 btn btn-default"  onclick="enterVal(this)">+</button>
+                            <button class="col-sm-2 btn btn-default"  onclick="enterVal(this)">-</button>
+                            <button class="col-sm-2 btn btn-default"  onclick="enterVal(this)">*</button>
+                            <button class="col-sm-2 btn btn-default"  onclick="enterVal(this)">/</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>

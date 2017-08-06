@@ -1,0 +1,35 @@
+body{
+    position: relative;
+}
+.commmon-my{
+
+    padding-top:50px;
+    font-size: 25px;
+    font-weight: 700;
+    color:#000;
+    height:500px;
+}
+
+#about{
+
+    background-color: #00aa00;
+}
+#qualification{
+    background-color: purple;
+
+
+}
+#skills{
+    background-color: darkblue;
+
+
+}
+#contact{
+    background-color: orangered;
+
+
+}
+.calculator button{
+    font-weight: 700;
+    margin:3px;
+}

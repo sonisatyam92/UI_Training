@@ -1,0 +1,9 @@
+Assignment :
+
+
+Design a Resume Page
+with Scroll Spy / Parallax scrolling.
+
+
+
+Develop a Virtual Keyboard with numeric and alphabets that can render the text area.
