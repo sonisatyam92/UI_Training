@@ -1,0 +1,76 @@
+Software :
+
+    User Interface :
+
+         User Interface Elements :
+
+         Events :
+
+         Design :
+
+
+
+
+-------------------------------------------------
+Website:
+
+   UI Elements : -> HTML
+
+   Design/Look and feel -> Style/ CSS
+
+   Event Management -> Javascript ( JS)/ DOM Manipulation
+
+   -------------------------------
+
+   - Dom Manipulation
+
+      DOM ( Document Object Model : HTML Page)
+      Using js  we can access DOM(HTML) and can manipulate it.
+
+
+      Javascript : ( Runs through Javascript Runner Engine)
+        It is a scripting language. ( its is always runtime)
+        are runtime languages. ( Hence. only runtime errors)
+
+
+
+C#, java, C, Python ( Interpreted/ Compiled Language) ( Compiler)
+
+
+- Type caste ( Integer -> String . String -Integer )
+  Data Typed !!! Language
+  int i;
+
+  But Javascript - UNtyped.
+  var i;
+
+
+  Normally programming logic
+
+  If / switch ( Decision Making )
+
+   Looping ( while, For)
+
+   Block.
+
+   Function
+
+
+Assignment :
+    Render a page having even and odd numbers being printed in a table
+
+    ---------------
+    | Even | Odd   |
+    ----------------
+    | 2    | 1     |
+    ----------------
+      4   |  3
+--------------------
+
+     6    |    4
+
+
+
+
+
+

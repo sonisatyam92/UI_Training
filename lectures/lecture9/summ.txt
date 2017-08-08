@@ -4,6 +4,8 @@ Assignment :
 Design a Resume Page
 with Scroll Spy / Parallax scrolling.
 
+https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp
+
 
 
 Develop a Virtual Keyboard with numeric and alphabets that can render the text area.
