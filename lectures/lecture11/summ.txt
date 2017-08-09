@@ -1,0 +1,121 @@
+Javascript,
+ Object
+ Data types
+ Function
+
+--------------------------------------------------
+ Object Oriented Programming                   vs               Procedure Oriented Programming
+  OOPs vs POPs
+
+  Encapsulation
+  Abstraction
+  Polymorphism
+  Inheritance
+
+
+
+  Encapsulation ?  Not applicable
+  Wrapping data/members/functions into objects -> Can we do that in javascript ?
+
+   Abstraction  ? Hiding of  implementation.? Yes partially could be achieved.
+
+   Polymorphism :
+     Runtime and compile Runtime
+
+     Runtime : Method Overriding ( same method syntax but in sub class ) -- Not possible
+     Compile : Method overloading ( same method name but different pattern of arguments ) -Not possible due to DOM
+
+  Inheritance : Not possible
+
+
+
+  C++ vs C
+
+  C
+  void main(){
+
+  dsfsdfsdfsdfs
+  }
+
+  void MyClass(){
+
+  }
+
+
+  C
+  Everything is in form of functions and methods and members.
+
+  C++
+  Everything is most likely to be in Objects :
+  class MyClass {
+
+        MyClass(){
+
+        }
+  }
+
+  Javascript ???
+
+  function myfunction(name){
+
+  }
+
+  function myfunction(name, age){
+
+  }
+
+  Javascript :
+
+   IN m
+
+
+
+Assignment :
+    Overwrite :  completely new implement over seeing the old one. ( old implementation)
+
+    Overload : same method but diferent pattern variable
+    Override : same method but in sub class ( super.test())
+
+   Implement test function which was earlier as string. when defined.
+
+   When print test prior definition of test it should print string value.
+   nce defined test function it should execute the function by ();
+
+
+    defined test variable with assignment of a string
+    console.log(test);
+
+
+    // some code herre of test assigniing
+    oonsole.log(test); // is should print the value of stirng
+    // create test named function.
+    oonsole.log(test()); // it should print something.
+
+
+
+
+   create a function which once passed two  values and operator char('+','-')
+   should do operation ( make a note to use functional programming)
+
+   Also handle edge case scenarios like if pass nothing ( hint use typeof to check ) though its hosuldnt give me error.
+
+   calcultate(1,3,'+'); 4
+   calcultate(1,3,'-'); -2
+   calcultate(1,'+'); invalid input
+   calcultate(); invalid input
+   calcultate('a', '3','addme'); invalid input
+   calcultate('a', 3,'add'); a3;
+   calcultate('a', 3,'sub'); invalid input;
+   calcultate('a', 'b','add'); ab;
+   calcultate(null, '3','add'); invalid input
+
+
+
+   caluclate(op1, op2, operator){}
+
+
+  add(op1,op2);
+  sub(op1,op2);
+
+
+
