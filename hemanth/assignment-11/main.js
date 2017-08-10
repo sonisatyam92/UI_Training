@@ -22,7 +22,7 @@ function calculate(a,b,op){
 
     }
     else if((op === '-')||(op === 'sub')){
-        if ((a>0||a<0)&&(b>0||b<0)) {
+        if ((a>=0||a<0)&&(b>=0||b<0)) {
             return a - b;
         }
         else{
@@ -39,14 +39,16 @@ function add(a,b){
 
 }
 function sub(a,b){
-    if ((a>0||a<0)&&(b>0||b<0)) {
+    if ((a>=0||a<0)&&(b>=0||b<0)) {
         return a - b;
     }
     else{
         return 'Invalid Input';
     }
 }
-
+var x=null;
+var y=0;
+console.log((x-y));
 console.log(calculate(a,b,op));
 console.log(add(a,b));
 console.log(sub(a,b));
