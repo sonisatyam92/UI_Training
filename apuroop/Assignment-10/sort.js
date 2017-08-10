@@ -27,7 +27,7 @@ for (var i=1 ; i<=100 ; i++){
 
     test(i);
 
-    if (i=100){
+    if (i!=100){
 
         var row = document.createElement("TR");
         row.setAttribute("id", "myTr");
@@ -36,14 +36,12 @@ for (var i=1 ; i<=100 ; i++){
         var EvenSum = document.createElement("TD");
         var evenSumCell = document.createTextNode(sumEven);
         EvenSum.appendChild(evenSumCell);
-        document.getElementById("myTr" + i).appendChild(EvenSum);
-        sumEven = sumEven + even;
+        document.getElementById("myTr").appendChild(EvenSum);
 
         var OddSum = document.createElement("TD");
         var oddSumCell = document.createTextNode(sumOdd);
         OddSum.appendChild(oddSumCell);
-        document.getElementById("myTr" + i).appendChild(OddSum);
-        sumOdd = sumOdd + odd;
+        document.getElementById("myTr").appendChild(OddSum);
 
     }
 }
