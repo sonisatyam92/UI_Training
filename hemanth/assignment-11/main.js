@@ -21,14 +21,8 @@ function calculate(a,b,op){
         return a + b;
 
     }
-    else if((op === '-')||(op === 'sub')){
-        if ((a>=0||a<0)&&(b>=0||b<0)) {
-            return a - b;
-        }
-        else{
-            return 'Invalid Input';
-        }
-
+    else if((op === '-')||(op === 'sub') && typeof a == 'number' && typeof b =='number'){
+        return a - b;
     }
     else{
         return 'Invalid Input';
