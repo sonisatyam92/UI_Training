@@ -21,7 +21,7 @@ function calculate(a,b,op){
         return a + b;
 
     }
-    else if((op === '-')||(op === 'sub') && typeof a == 'number' && typeof b =='number'){
+    else if(((op === '-')||(op === 'sub')) && (typeof a === 'number') && (typeof b ==='number')){
         return a - b;
     }
     else{
@@ -33,7 +33,7 @@ function add(a,b){
 
 }
 function sub(a,b){
-    if ((a>=0||a<0)&&(b>=0||b<0)) {
+    if (typeof a === 'number' && typeof b ==='number') {
         return a - b;
     }
     else{
