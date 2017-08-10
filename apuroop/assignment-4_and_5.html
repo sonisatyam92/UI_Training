@@ -15,937 +15,316 @@
 
 <!--Body of the page-->
 <body >
-<article>
+<div id="body">
 
-    <!--Heading of the page-->
-    <header class="header">
-        <h1>Employee Portal 2017</h1>
-    </header>
+    <div id="header">
+        <!--Heading of the page-->
+        <header class="header">
+            <h1>Employee Portal 2017</h1>
+        </header>
 
-    <form class="header" action="xyz">
-        <fieldset>
+        <form class="loginHeader" action="xyz">
+            <fieldset id="login" >
 
-            <legend>Login:</legend>
+                <legend>Login:</legend>
 
+                <table>
+
+                    <tr>
+                        <td>
+                            <label>Username:</label>
+                        </td>
+                        <td>
+                            <input type="email" placeholder="johndoe@blah.com" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" />
+                        </td>
+                        <td>
+                            <label>I'm not a robot</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <button>
+                                <span>Submit</span>
+                            </button>
+                        </td>
+                    </tr>
+
+
+                </table>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="content">
+        <!--Section with form-->
+        <form class="content" action="xyz" method="post">
+
+            <!--Form for employee info-->
             <table>
 
+                <!--Placing inputs in rows and columns for uniformity-->
+                <!--First Name-->
                 <tr>
                     <td>
-                        <label>Username:</label>
+                        <label>Employee's First Name:</label>
                     </td>
                     <td>
-                        <input type="email" placeholder="johndoe@blah.com" />
+                        <input name="firstName" placeholder="First Name"  />
+                    </td>
+                </tr>
+
+                <!--Last Name-->
+                <tr>
+                    <td>
+                        <label>Employee's Last Name:</label>
+                    </td>
+                    <td>
+                        <input id="lastName" name="lastName" placeholder="Last Name" />
+                    </td>
+                </tr>
+
+                <!--Phone number-->
+                <tr>
+                    <td>
+                        <label>Employee's Phone Number:</label>
+                    </td>
+                    <td>
+                        <input id="phone" name="phone" placeholder="(###)-###-####" />
+                    </td>
+                </tr>
+
+                <!--Gender selection-->
+                <tr>
+                    <td>
+                        <label>Employee's Gender:</label>
+                    </td>
+                    <td>
+
+                        <!--Male-->
+                        <label for="male" >Male:</label>
+                        <input type="radio" id="male" name="gender"/>
+
+                        <!--Female-->
+                        <label for="female" >Female:</label>
+                        <input type="radio" id="female" name="gender"/>
+
+                        <!--Other-->
+                        <label for="other" >Other:</label>
+                        <input type="radio" id="other" name="gender"/>
+                    </td>
+                </tr>
+
+                <!--Employment period-->
+
+                <tr>
+                    <td>
+                        <label>Employment Period:</label>
+                    </td>
+                    <td>
+                        <select name="option">
+                            <option value="1">New (0-12 months)</option>
+                            <option value="2">Junior (1-5 years)</option>
+                            <option value="3">Senior (5+ years)</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!--Employment Status-->
+                <tr>
+                    <td>
+                        <label for="fullTime" >Full Time Employee:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="fullTime" name="fullTime" />
+                    </td>
+
+                    <td>
+                        <label for="overTime" >Overtime:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="overTime" name="overTime" />
+                    </td>
+                </tr>
+
+                <!--Employee email-->
+                <tr>
+                    <td>
+                        <label for="email">Employee's email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" placeholder="john_doe@example.com"/>
+                    </td>
+                </tr>
+
+                <!--Password creation-->
+                <tr>
+                    <td>
+                        <!--New password-->
+                        <label for="pwd">New Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="pwd" name="password" />
+                    </td>
+
+                    <td>
+                        <!--Confirm Password-->
+                        <label for="confPwd">Confirm Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="confPwd" name="confPassword" />
                     </td>
                 </tr>
 
                 <tr>
+                    <!--Resume upload-->
                     <td>
-                        <label>Password:</label>
+                        <label>Upload latest Resume</label>
                     </td>
                     <td>
-                        <input type="password" value="noPassword" />
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <input type="checkbox" />
-                    </td>
-                    <td>
-                        <label>I'm not a robot</label>
+                        <input type="file">
                     </td>
                 </tr>
 
+                <!--Submit and Reset buttons-->
                 <tr>
-                    <td>
-                        <button>
+                    <td align="left">
+                        <!--Submit button-->
+                        <button id="submit">
                             <span>Submit</span>
+                        </button>
+                        <!--</td>
+
+                        <td align="left">-->
+                        <!--Reset Button-->
+                        <button type="reset" id="reset">
+                            <span>Reset all fields</span>
                         </button>
                     </td>
                 </tr>
 
-
             </table>
-        </fieldset>
-    </form>
+        </form>
 
-    <br>
-    <br>
+        <br>
 
-    <!--Section with form-->
-    <form class="content" action="xyz" method="post">
+        <!--Assignment 4-->
+        <h2>
+            Assignment 4
+        </h2>
 
-        <!--Form for employee info-->
-        <table>
-
-            <!--Placing inputs in rows and columns for uniformity-->
-            <!--First Name-->
+        <table id="a4">
             <tr>
-                <td>
-                    <label>Employee's First Name:</label>
+                <td class="G1">
+                    A1
                 </td>
-                <td>
-                    <input name="firstName" placeholder="First Name"  />
+                <td class="G2">
+                    A2
+                </td>
+                <td class="G3">
+                    A3
+                </td>
+                <td class="G4">
+                    A4
+                </td>
+                <td class="G5">
+                    A5
+                </td>
+                <td class="G6">
+                    A6
                 </td>
             </tr>
-
-            <!--Last Name-->
             <tr>
-                <td>
-                    <label>Employee's Last Name:</label>
+                <td class="BR1">
+                    B1
                 </td>
-                <td>
-                    <input id="lastName" name="lastName" placeholder="Last Name" />
+                <td class="BR2">
+                    B2
+                </td>
+                <td class="BR3">
+                    B3
+                </td>
+                <td class="BR4">
+                    B4
+                </td>
+                <td class="BR5">
+                    B5
+                </td>
+                <td class="BR6">
+                    B6
                 </td>
             </tr>
-
-            <!--Phone number-->
             <tr>
-                <td>
-                    <label>Employee's Phone Number:</label>
+                <td class="B1">
+                    C1
                 </td>
-                <td>
-                    <input id="phone" name="phone" placeholder="(###)-###-####" />
+                <td class="B2">
+                    C2
+                </td>
+                <td class="B3">
+                    C3
+                </td>
+                <td class="B4">
+                    C4
+                </td>
+                <td class="B5">
+                    C5
+                </td>
+                <td class="B6">
+                    C6
                 </td>
             </tr>
-
-            <!--Gender selection-->
             <tr>
-                <td>
-                    <label>Employee's Gender:</label>
+                <td  class="BW1">
+                    D1
                 </td>
-                <td>
-
-                    <!--Male-->
-                    <label for="male" >Male:</label>
-                    <input type="radio" id="male" name="gender"/>
-
-                    <!--Female-->
-                    <label for="female" >Female:</label>
-                    <input type="radio" id="female" name="gender"/>
-
-                    <!--Other-->
-                    <label for="other" >Other:</label>
-                    <input type="radio" id="other" name="gender"/>
+                <td  class="BW2">
+                    D2
+                </td>
+                <td  class="BW3">
+                    D3
+                </td>
+                <td  class="BW4">
+                    D4
+                </td>
+                <td  class="BW5">
+                    D5
+                </td>
+                <td  class="BW6">
+                    D6
                 </td>
             </tr>
-
-            <!--Employment period-->
-
-            <tr>
-                <td>
-                    <label>Employment Period:</label>
-                </td>
-                <td>
-                    <select name="option">
-                        <option value="1">New (0-12 months)</option>
-                        <option value="2">Junior (1-5 years)</option>
-                        <option value="3">Senior (5+ years)</option>
-                    </select>
-                </td>
-            </tr>
-
-            <!--Employment Status-->
-            <tr>
-                <td>
-                    <label for="fullTime" >Full Time Employee:</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="fullTime" name="fullTime" />
-                </td>
-
-                <td>
-                    <label for="overTime" >Overtime:</label>
-                </td>
-                <td>
-                    <input type="checkbox" id="overTime" name="overTime" />
-                </td>
-            </tr>
-
-            <!--Employee email-->
-            <tr>
-                <td>
-                    <label for="email">Employee's email:</label>
-                </td>
-                <td>
-                    <input type="email" id="email" name="email" placeholder="john_doe@example.com"/>
-                </td>
-            </tr>
-
-            <!--Password creation-->
-            <tr>
-                <td>
-                    <!--New password-->
-                    <label for="pwd">New Password:</label>
-                </td>
-                <td>
-                    <input type="password" id="pwd" name="password" />
-                </td>
-
-                <td>
-                    <!--Confirm Password-->
-                    <label for="confPwd">Confirm Password:</label>
-                </td>
-                <td>
-                    <input type="password" id="confPwd" name="confPassword" />
-                </td>
-            </tr>
-
-            <tr>
-                <!--Resume upload-->
-                <td>
-                    <label>Upload latest Resume</label>
-                </td>
-                <td>
-                    <input type="file">
-                </td>
-            </tr>
-
-            <!--Submit and Reset buttons-->
-            <tr>
-                <td align="left">
-                    <!--Submit button-->
-                    <button id="submit">
-                        <span>Submit</span>
-                    </button>
-                    <!--</td>
-
-                    <td align="left">-->
-                    <!--Reset Button-->
-                    <button type="reset" id="reset">
-                        <span>Reset all fields</span>
-                    </button>
-                </td>
-            </tr>
-
         </table>
-    </form>
 
-    <br>
+    </div>
 
-    <p>
-        ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day.
+    <div id="footer">
 
-        ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day.
+        <!--Footer of the page-->
+        <footer class="footer">
+            <fieldset id="copyright">
+                <h3>
+                    All rights inclusive of XYZ Inc.
+                </h3>
+            </fieldset>
+        </footer>
 
-        ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day.
-
-
-        ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day.
-        ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day. ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day.
-        ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day.
-        ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day.
-        ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day. ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day. ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day. ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day. ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day. ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day. ey didn’t think they could bear it if anyone found out about the
-        Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met
-        for several years; in fact, Mrs. Dursley pretended she didn’t have a
-        sister, because her sister and her good-for-nothing husband were
-        as unDursleyish as it was possible to be.  e Dursleys shuddered
-        to think what the neighbors would say if the Potters arrived in the
-        street.  e Dursleys knew that the Potters had a small son, too, but
-        they had never even seen him.  is boy was another good reason
-        for keeping the Potters away; they didn’t want Dudley mixing with
-        a child like that.
-        When Mr. and Mrs. Dursley woke up on the dull, gray Tuesday
-        our story starts, there was nothing about the cloudy sky outside to
-        suggest that strange and mysterious things would soon be happening
-        all over the country. Mr. Dursley hummed as he picked out his
-        most boring tie for work, and Mrs. Dursley gossiped away happily
-        as she wrestled a screaming Dudley into his high chair.
-        None of them noticed a large, tawny owl fl utter past the
-        window.
-        At half past eight, Mr. Dursley picked up his briefcase, pecked
-        Mrs. Dursley on the cheek, and tried to kiss Dudley good-bye but
-        missed, because Dudley was now having a tantrum and throwing
-        his cereal at the walls. “Little tyke,” chortled Mr. Dursley as he left
-        the house. He got into his car and backed out of number four’s
-        drive.
-        It was on the corner of the street that he noticed the fi rst sign
-        of something peculiar — a cat reading a map. For a second, Mr.
-        Dursley didn’t realize what he had seen — then he jerked his head
-        around to look again.  ere was a tabby cat standing on the corner
-        chapter one
-        01_Boy Who Lived.indd 2 3/9/09 3:00:08 PM
-        Process Black
-        3
-        of Privet Drive, but there wasn’t a map in sight. What could he
-        have been thinking of? It must have been a trick of the light. Mr.
-        Dursley blinked and stared at the cat. It stared back. As Mr. Dursley
-        drove around the corner and up the road, he watched the cat in
-        his mirror. It was now reading the sign that said Privet Drive — no,
-        looking at the sign; cats couldn’t read maps or signs. Mr. Dursley
-        gave himself a little shake and put the cat out of his mind. As he
-        drove toward town he thought of nothing except a large order of
-        drills he was hoping to get that day.
-
-
-
-
-
-
-
-    </p>
-
-    <br>
-
-    <!--Assignment 4-->
-    <h2>
-        Assignment 4
-    </h2>
-
-    <table id="a4">
-        <tr>
-            <td class="G1">
-                A1
-            </td>
-            <td class="G2">
-                A2
-            </td>
-            <td class="G3">
-                A3
-            </td>
-            <td class="G4">
-                A4
-            </td>
-            <td class="G5">
-                A5
-            </td>
-            <td class="G6">
-                A6
-            </td>
-        </tr>
-        <tr>
-            <td class="BR1">
-                B1
-            </td>
-            <td class="BR2">
-                B2
-            </td>
-            <td class="BR3">
-                B3
-            </td>
-            <td class="BR4">
-                B4
-            </td>
-            <td class="BR5">
-                B5
-            </td>
-            <td class="BR6">
-                B6
-            </td>
-        </tr>
-        <tr>
-            <td class="B1">
-                C1
-            </td>
-            <td class="B2">
-                C2
-            </td>
-            <td class="B3">
-                C3
-            </td>
-            <td class="B4">
-                C4
-            </td>
-            <td class="B5">
-                C5
-            </td>
-            <td class="B6">
-                C6
-            </td>
-        </tr>
-        <tr>
-            <td  class="BW1">
-                D1
-            </td>
-            <td  class="BW2">
-                D2
-            </td>
-            <td  class="BW3">
-                D3
-            </td>
-            <td  class="BW4">
-                D4
-            </td>
-            <td  class="BW5">
-                D5
-            </td>
-            <td  class="BW6">
-                D6
-            </td>
-        </tr>
-    </table>
-
-    <br>
-    <br>
-
-    <!--Footer of the page-->
-    <footer class="footer">
-        <fieldset>
-            <h3>
-                All rights inclusive of XYZ Inc.
-            </h3>
-        </fieldset>
-    </footer>
-</article>
+    </div>
+</div>
 </body>
 </html>
