@@ -1,0 +1,80 @@
+Event handling in javascript :
+
+Automated Event
+
+On document load
+on document render
+on document unload -> CLOSE
+
+User Triggered
+
+Click
+Select
+scroll
+check
+change
+onfocus
+onblur
+
+Mouse event
+    mouseover
+    mouseout
+keyboard
+    keypress
+    keyrelease
+--------------------------
+
+Prototype :
+
+ECMA5 script -> Javascript
+// Event
+
+
+Interview :
+
+ - Even propagation /event Bubbling
+
+-- Closure
+
+Classes in javascript
+
+No conecpt classes in Javascript :
+
+
+constructor
+
+
+OPS
+Encapsulation : in javascript : Classes
+Abstraction -> yes
+Polyphorism
+inheritance ->
+
+Class a ->class b {
+
+}
+
+
+You can cheild parent parent relationshup
+
+Parent property can be extended to child
+
+overriding -> super.parent implementation
+
+var test= function();
+ overwrite
+
+
+Assignment
+
+
+Implementing Click events onto Virtual Keyboard assignment.
+
+
+
+
+
+
+
+
+
