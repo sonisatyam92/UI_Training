@@ -40,8 +40,15 @@ function onChecked(el){
         var target = el;
     alert(target.checked);
 }
-function ontextchange(el){
-    document.getElementById("magnify").innerHTML=el.value;
+document.getElementById('txt').onkeyup = ontextchange;
+
+function ontextchange(ev){
+    var el = ev.target;
+    if(ev.keyCode === 13){
+        document.getElementById("magnify").innerHTML+='<br/>';
+        return;
+    }
+    document.getElementById("magnify").innerHTML += ev.key;
 
 }
 

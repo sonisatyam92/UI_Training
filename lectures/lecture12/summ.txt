@@ -69,6 +69,7 @@ Assignment
 
 
 Implementing Click events onto Virtual Keyboard assignment.
+with Enter key implementation.
 
 
 
