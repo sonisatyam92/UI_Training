@@ -1,0 +1,53 @@
+
+Jquery :
+  70%->
+  Basic how you can work ,
+
+
+
+math :
+ ceil
+ floor
+ round
+ pow
+ exp
+ random
+
+ parseInt, parseFloat
+
+
+String
+
+Date
+
+
+
+
+Assignment :
+
+ Lottery generator
+
+ 3 digits
+
+
+
+  -------    ---------     ---------
+
+
+  btn1       btn
+
+  Assignment :
+
+
+    324,324
+    123,123
+    3434 :  Three thousand four hundred thirty four
+    34 :    thirty four
+    4 :     Four
+    10 :    Ten
+
+
+    Three lakhs Twenty Four thousands Three hundred twenty four
+
+
+

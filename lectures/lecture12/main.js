@@ -73,7 +73,7 @@ function Person(input){
 
 var p1 = Person({id:1,name:'Satyam'});
 var p2 = Person({id:2,name:'Satyam'});
-p1.setName('Pradeep');
+//p1.setName('Pradeep');
 
 
 console.log(p1.getId());
