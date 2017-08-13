@@ -33,15 +33,15 @@ calc(1,2,"+");
 
 * */
 function calc(a,b,c){
-    if (typeof a == "number" & typeof b == "number" & typeof c == "+")  {
-        d = a + b;
-        return d;
+    if (typeof a == "number" && typeof b == "number" && c == "+")  {
+        var d = a + b;
+        console.log(d);
     }
-    if (typeof a == "number" & typeof b == "number" & typeof c == "-")  {
-        d = a - b;
-        return d;
+    else if (typeof a == "number" && typeof b == "number" && c == "-")  {
+        var d = a - b;
+        console.log(d);
     }
     else{
-        return "error";
+        console.log("Error");
     }
 }
