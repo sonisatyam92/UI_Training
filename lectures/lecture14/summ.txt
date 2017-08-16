@@ -1,0 +1,26 @@
+JQuery
+
+Selector : $
+
+$
+
+
+
+
+Assignment :
+
+
+ 20
+
+
+ Ticking Clock :
+
+    Using JQuery :
+
+      20:00
+      19:59
+      19:58
+      00:00
+
+
+
