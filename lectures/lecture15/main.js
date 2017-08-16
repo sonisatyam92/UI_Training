@@ -18,3 +18,16 @@
     });
 
 })();
+
+
+$('#loginBtn').on('click',function(){
+    //$('.login-box').hide();
+    //$('.login-box').fadeOut();
+    //$('.login-box').fadeOut('slow');
+    //$('.login-box').fadeOut('fast');
+    $('.login-box').fadeToggle(3000);
+});
+
+$('.head-line').on('click',function(){
+    $('.login-box').fadeToggle(3000);
+});

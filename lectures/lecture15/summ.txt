@@ -1,0 +1,9 @@
+Assignment :
+
+  - Use jquery to manipulate your html page.
+
+
+  - Build the Carousel With Fade In Fade Out
+
+
+
