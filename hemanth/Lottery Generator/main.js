@@ -15,7 +15,7 @@ function myFunction3() {
     document.getElementById("id3").innerHTML =n[2];
 }
 function myFunction4() {
-    var x=Math.round((Math.random()*10)%2);
+    var x=Math.round((Math.random()*10))%2;
     if(x===0||x===1||x===2) {
         document.getElementById("id4").innerHTML = n[x];
     }
