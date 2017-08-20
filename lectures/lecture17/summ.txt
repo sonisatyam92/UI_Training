@@ -1,0 +1,98 @@
+- Asynchronous Javascript And XML : AJAX
+- JavaScript Object Notation  : JSON
+
+JSON :
+
+
+
+
+System :
+X <-> Y
+
+ ----------
+ Channel : Runtime -> Medium
+ Contract / Format to understand the data communicated ->
+
+
+ XML
+ -----
+
+ <person>
+    <name>Satyam</name>
+ </person>
+
+
+ XML cons :
+ Size,
+ Serialization -> character -> bits
+ Message size is high.
+
+
+ Satyam -> 37
+ Serialization -> High
+
+ JSON :
+ Satyam -> 16
+  Serialization -> Low
+
+ AJAX :
+  i don't refresh ?
+
+
+  Ajax
+  Load things on html aysnchronously
+
+  Async -> false -> Blocks
+  Async -> true -> Unblock
+
+--------------------------
+
+- Promises in javascript
+- Deferred Object in javascript
+
+
+
+ Loading -> Eager vs lazy
+
+ Eager  : i will get all data then i will do it.
+
+ Eg :
+ Cooking :
+
+ Cake :
+ Break Base
+ Cream Fillings
+ Fruits
+
+ First create cake base once completed
+ cream filling ->  completed
+ Fruits
+
+ HTML
+ i will not show anything till my all components are ready.
+ User: see nothing
+
+
+ Lazy : i start doing it, and i get data meanwhile to use it
+  Start Baking Cake,
+  Cream Filling -> Cooking
+  Cut fruits
+
+  HTML
+
+   Render my page then
+   meanwhile the other components will show.
+
+
+
+Assignment :
+Login Application :
+
+Using Ajax (Lazy Loading)
+ Login Box -> Login.html
+ header ->   header.html
+
+
+
+
+
