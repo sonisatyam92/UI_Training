@@ -1,0 +1,130 @@
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.purple {
+    background-color: purple;
+}
+
+
+body {
+    margin : 0;
+}
+
+.control-panel{
+    align-content: center;
+    margin: auto;
+    text-align: center;
+}
+.animation-box{
+    background: transparent;
+}
+.animation-main{
+    width: 100%;
+    height: 30%;
+    margin : 0;
+    border:none;
+    padding: 0 0 0 0;
+}
+
+.login-main{
+    background: linear-gradient(to right, #36E70B , #36F50B);
+    width: 100%;
+    height: 100%;
+    margin : 0;
+    border:none;
+    padding: 0px 0 0 0;
+}
+.login-box{
+    background: #fff;
+    width: 30%;
+    height: auto;
+    position: absolute;
+    align-content: center;
+    margin : 10% 0 0 31%;
+    padding : 20px;
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.form{
+    width : 100%;
+    align-items: center;
+    align-self: center;
+    alignment: center;
+    align-content: center;
+    padding: 0;
+}
+.form-ele{
+    width:90%;
+    height: 45px;
+    margin : 20px 10px 20px 10px ;
+    padding: 20px;
+    outline: 0;
+    background: #f2f2f2;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+.form-btn{
+    color: white;
+    width: 90%;
+    margin:20px 10px ;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    border: 0;
+    padding: 15px;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+
+}
+
+.register{
+    color:darkgray;
+    margin-left: 0px;
+}
+.create-link{
+    cursor: pointer;
+    color :#4CAF50;
+    font-weight: bold;
+}
+.create-link:hover{
+    text-decoration: underline;
+}
+.footer{
+    color : darkgray;
+}
+.header {
+    background: #4CAF50;
+    height: 40px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.split-line{
+    height: 3px;
+    background: lightgray;
+    margin: 0;
+    padding: 0;
+}
+.head-line{
+
+    color: #fff;
+    font-weight: 800;
+    padding-left: 20px;
+    font-size: 30px;
+    line-height: 40px;
+    word-spacing: 5px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+}

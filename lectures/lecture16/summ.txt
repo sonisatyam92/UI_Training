@@ -1,0 +1,28 @@
+-> jquery, bootstrap
+-> AJAX, JSON
+-> angularJS
+
+-> React
+
+-> NodeJs
+
+
+
+UI
+
+Jquery/Javascript
+MVC. mvvm
+Knockout
+Amber/Ember
+BackboneJS
+ExtJS
+AngularJS
+React
+Rhino
+Semantic
+Zkoss -> Java
+
+
+
+
+
