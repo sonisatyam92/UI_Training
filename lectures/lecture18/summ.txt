@@ -1,0 +1,10 @@
+Loading Spinner ( Masking)
+
+Ajax
+Setting Object:
+   HTTP Methods :
+       GET, POST, DELETE, PUT, OPTIONS
+
+
+
+Creating A Small grid with ajax loading.

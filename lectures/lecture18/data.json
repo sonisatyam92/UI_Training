@@ -1,0 +1,18 @@
+{
+  "courseName":"UI Training",
+  "technologies":[
+    "HTML", "CSS", "Bootstrap","Javascript","jQuery","Ajax","JSON","XML","AngularJS"
+  ],
+  "students": [
+    {
+      "name":"Apuroop"
+    },
+    {
+      "name":"Hemanth"
+    },
+    {
+      "name":"Bobby"
+    }
+  ]
+
+}
