@@ -1,0 +1,73 @@
+Deferred Object :
+
+  Condition / State where the execution of the functions/code is deffered.
+
+
+
+  Ajax -> Deferred.
+
+  Ajax -> Js Execution does not wait for Ajax to complete.
+
+
+
+3 request fired.
+     Eg:
+     Person info coming from request 1.
+     Person Detail coming from request 2.
+     Person Qualification coming from request 3.
+
+     All Person Info, Resume.
+
+
+
+Promise :
+   It makes your execution wait for deferred Objects execution to get completed/resolve.
+
+
+
+Grid:
+Stock Market Grid :
+
+StockIds ()
+Ajax 1
+   each stck id
+      get stock name
+   Map stock id -> stock name
+      BSE
+         NSE
+            NASDAQ.
+
+
+API -> All the stock Ids
+
+API -> All stock Info.
+
+API NSE-> StockId : NSE
+API BSE-> StockId : BSE
+
+
+Stock ID    Stock Name       NSE   BSE    NASDAQ    DOWJONES   NIKKEI
+
+MCROST      Microsoft        1.0   XX     XX          XXX        XXX
+
+
+
+Calculate Each Stock show below:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
