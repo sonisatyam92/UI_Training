@@ -50,10 +50,10 @@ var doLogin  = function(username, password){
 $('#loginBtn').on('click',function(){
     var user = $('#username').val();
     var pass = $('#password').val();
-    if(!user || user.length ===0 ){
-        shakeForm('Username field are mandatory.');
+    if(!user || user.length === 0 ){
+        shakeForm('Username field is mandatory.');
     }else if(!pass || pass.length === 0){
-        shakeForm('Password fields are mandatory.');
+        shakeForm('Password fields is mandatory.');
     }else {
        doLogin(user,pass).done(function(){
            if(isValidLogin){
@@ -61,7 +61,7 @@ $('#loginBtn').on('click',function(){
                $('.pre-section').hide();
                $('.post-section').show();
            }else {
-               shakeForm('Invalid Login credentials.');
+               shakeForm('Invalid Login credentials. Please try with valid credentials');
            }
        })
     }
