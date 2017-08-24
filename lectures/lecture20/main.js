@@ -33,19 +33,22 @@ $(".create-link").on('click',function(){
     });
 });
 
-var doLogin  = function(username, password){
+var doLogin  = function (username, password){
     return $.ajax('users.json')
-        .done(function(res){
-        var users = res.users;
+        .done(function(responseJSON){
+        var users = responseJSON.users;
         isValidLogin  = false;
-        for(var i = 0 ; i<users.length ; i++){
+        for(var i = 0 ; i < users.length ; i++){
             if(username === users[i].username && password === users[i].password){
                 isValidLogin = true;
                 break;
             }
         }
+        // nothing here
     });
 };
+
+
 
 $('#loginBtn').on('click',function(){
     var user = $('#username').val();

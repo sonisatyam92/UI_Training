@@ -2,3 +2,44 @@ Promises and Deferred Objects :
 
 
 
+Deferred
+
+return .resolve()
+        .done(function(){
+          // logic
+        })
+
+
+ajax -> logic1
+
+      -> logic2
+
+
+  Chaining of callback
+
+  a(){
+    return Ajax();
+    }
+
+
+  b(){
+    return a().done(function(){
+      logicl
+      })
+
+  }
+
+  b().done(function(){
+    logic 2
+  })
+
+
+
+
+
+
+
+
+
+
+
