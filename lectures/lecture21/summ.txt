@@ -1,0 +1,41 @@
+Event Bubbling :
+
+   el onclick="sadas"
+
+
+   el.on('click', dsfsdf);
+
+
+   document.El.click = dsfsdf;
+
+
+Closer :
+
+    Security ?
+
+
+
+Scope, Visibility, Lifetime :
+
+
+
+
+
+
+Strict Javascript
+
+
+Assignment :
+
+Demonstrate  an example for each of
+
+Event Bubbling
+   Event Bubbling with restictive propogation
+
+CLosure
+
+
+Use Strict example
+
+
+
