@@ -33,6 +33,9 @@
             location = _loc;
         };
         function init(){
+            if(!val){
+                return;
+            }
             if(val.firstName){
                 setFirstName(val.firstName);
             }
@@ -65,22 +68,20 @@
         }
     }
 
-
-
     function PersonsController(){
         var data = [];
         return {
             addPerson : function(firstName, lastName, age, gender, location){
-                var json = {
-                    firstName : firstName,
-                    lastName : lastName,
-                    age : age,
-                    gender : gender,
-                    location : location
-                };
 
-                var person = Person(json);
+
+                var person = Person();
+                person.setFirstName(firstName);
+                person.setLastName(lastName);
+                person.setAge(age);
+                person.setGender(gender);
+                person.setLocation(location);
                 data.push(person);
+                view.refresh(data);
             }
         }
 
@@ -88,16 +89,16 @@
 
     function PersonView(){
        function refreshView (data){
-           var tbody = $('#data');
+           var tbody = $('.data');
            var txt ="";
            for(var i = 0 ; i < data.length ; i++){
                var person = data[i];
                txt += '<tr>' +
-                   '<td>'+person.getFirstName()+'</td>' +
-                   '<td>'+person.getLastName()+'</td>' +
-                   '<td>'+person.getAge()+'</td>' +
-                   '<td>'+person.getGender()+'</td>' +
-                   '<td>'+person.getLocation()+'</td>' +
+                   '<td class="text-capitalize">'+person.getFirstName()+'</td>' +
+                   '<td class="text-capitalize">'+person.getLastName()+'</td>' +
+                   '<td class="text-capitalize">'+person.getAge()+'</td>' +
+                   '<td class="text-capitalize">'+person.getGender()+'</td>' +
+                   '<td class="text-capitalize">'+person.getLocation()+'</td>' +
                    '</tr>';
 
 
