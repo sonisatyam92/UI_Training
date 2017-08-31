@@ -1,0 +1,11 @@
+MVC :
+
+ Model View Controller
+
+
+ Model : The Data or Logic ->
+
+
+ View : the handling of view
+
+ Controller : Event Handling or Delegation ->
