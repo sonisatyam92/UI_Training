@@ -7,10 +7,6 @@
             $scope.currentQuestion=null;
             $scope.selectOption=null;
 
-
-
-
-
             $scope.onNext = function(){
                 var nextCnt = $scope.counter + 1;
                 if(questions[nextCnt]){
@@ -19,7 +15,6 @@
                 }else {
                     $scope.counter =-1;
                 }
-
             };
 
             $scope.onNext();
