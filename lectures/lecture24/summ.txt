@@ -1,0 +1,148 @@
+
+AngularJS
+
+MVC ->
+Model View Controller
+
+Model
+   - Data
+View
+  - Interface/GUI
+Controller
+  - Handler
+
+
+Service
+  -  utility
+  - httpService/locationService/routeService
+
+Repository
+   - Data Store
+   sessionStorage/localStorage
+
+Dependency Injection
+
+DataService : Provide data
+
+Ajax
+ObjectStore
+FileStore
+
+-- Dependency Injection
+
+View -> Controller -> Service
+View(Controller){
+}
+
+Controller(service){
+}
+
+
+- Coupled & Cohesion
+System
+1000
+- Complexity
+module
+
+separate of logic
+
+De-couple it
+making less dependent
+
+
+
+
+FormSubmission(){
+      //validating
+    // submitting
+}
+
+FormSubmission(){
+    // validatin
+    // submitting
+}
+
+validatinLogin().validate();
+submitValidatinLogic().validate();
+
+forusub();
+
+
+formsub(validatingLogic){
+    runevalida
+    submitt
+}
+
+
+
+-------------------
+
+DOM Manipulation
+MVC -> Separation of logic
+Object state binding ->
+                        Model
+                            person
+                                name= satyam,apuroop , xuz
+                                surname  , Soni
+                        View
+
+                        Apuroop input field1 -> name, Satyam,
+                        input field2 -> surname, Soni
+
+
+
+                      Angularjs1 -> 2 way binding
+
+templating
+Routing
+
+
+
+Angularjs2 ->
+
+
+-------------------
+
+ Student Table
+
+ Form to fll up student
+ u fill form and submit it gets into table
+
+
+ Toggle ->  Offline and online Mode.
+
+ if toggle offline
+ u can only see the data what you you filled through form.
+
+
+ Toggle to online
+ Ajax request and table should
+
+
+
+
+-------------------------------
+Angular jS
+
+Directive
+Strucuture
+
+    App
+       View
+       Controller
+           model
+       Services
+       Repo
+       Directives
+         <popup>
+
+
+
+
+
+
+
+
+
+
+

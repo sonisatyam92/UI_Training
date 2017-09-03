@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="myApp/app.js"></script>
+<script src="myApp/controller/surname.controller.js"></script>
+<script src="myApp/controller/name.controller.js"></script>
+
+<body ng-app="myApp">
+<div  ng-controller="NameController">
+    First Name: <p>{{firstName}}</p>
+    <input ng-change="onTextChange()" ng-model="firstName"/>
+    length : {{len}}
+</div>
+<div ng-controller="SurnameController">
+    Surname Name: <p>{{lastName}}</p>
+    <input ng-change="onTextChange()" ng-model="lastName"/>
+    length : {{len}}
+</div>
+
+</body>
+</html>
