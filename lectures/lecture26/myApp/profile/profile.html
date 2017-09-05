@@ -1,0 +1,24 @@
+<div ng-controller="ProfileController">
+    Hi {{name}}
+    <br/>
+    DOB : {{ dob | date: 'yyyy-MM-dd' }} <br/>
+    DOB : {{ dob | date: 'medium' }} <br/>
+    DOB : {{ dob | date: 'shortDate' }} <br/>
+    DOB : {{ dob | date: 'fullDate' }} <br/>
+    DOB : {{ dob | date: 'short' }} <br/>
+    DOB : {{ dob | date: 'longDate' }} <br/>
+    DOB : {{ dob | date: 'mediumTime' }} <br/>
+    DOB : {{ dob | date: 'shortTime' }} <br/>
+    Fine : {{ fine | currency :'$' }} <br/>
+    Percentage : {{ percent | number :4}} <br/>
+
+    Skillsets
+    <ul>
+        <li ng-repeat="skill in skillsets | orderBy:'rating':true:skillsetsorter">
+            {{skill.name}}( {{skill.rating}} )
+        </li>
+    </ul>
+    {{city | limitTo:3 | uppercase }}
+
+
+</div>

@@ -1,0 +1,36 @@
+Assignment
+
+Profile
+
+Form:
+First Name
+last name
+DOB : dd-MM-yyyy
+
+Form [Skillset : Expertise(Expert/Mid/Beginner)] [Add]
+Table:
+
+Credit :  Expert (3) + Mid (2) + Begineer (1)
+
+Credit Score : Sum/No.skills
+
+
+Eg :
+---------------
+Satyam Soni
+DOB: (10 Jan, 1992)
+Age:
+
+Expert:
+Mid
+Bignner
+
+Credit :
+Percentage:
+ ---------------------
+ Apuroop V
+
+
+
+
+
