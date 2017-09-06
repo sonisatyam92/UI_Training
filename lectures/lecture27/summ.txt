@@ -1,0 +1,57 @@
+Angular JS
+
+Services
+
+
+Angular
+Controller
+Services
+     Singleton ( it should only one object)
+       SO could be shared across Controller
+     Utility/ Service something
+
+Banking
+
+Calculator (Small Component + widget)
+     operation :
+            1+1
+            "Satyam"+"Soni"
+            add(num, num)
+                    AddNum
+            add(str, str)
+                    AddString
+
+Profile Management
+   First Last
+       AddString(firstName, lastName);
+
+Service :
+         AddNum
+         AddString
+
+
+
+Dashboard
+Same data -> they represent data in diff way
+
+ Charts
+    Pie -> PieController -> getData
+    Bar chart -> BarController -> getData
+    Line Chart -> LineController
+ Table/Grid
+    Pivot Table1 -> XController
+    Pivot Table2  -> YController
+
+
+- Singleton
+- COuld be shared across Controller
+     SO in case you want share data across controller ?
+               use service.
+- Serves as utility for controller.
+
+
+
+
+
+
+
