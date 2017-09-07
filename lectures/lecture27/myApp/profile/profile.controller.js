@@ -1,7 +1,7 @@
 (function(){
     angular.module('myApp')
         .controller('ProfileController', ProfileController);
-    function  ProfileController($scope, DataService) {
+    function  ProfileController($scope, DataService, $http) {
         $scope.name= null;
         $scope.skill= null;
         $scope.rating= null;

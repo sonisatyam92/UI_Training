@@ -48,6 +48,17 @@ Same data -> they represent data in diff way
      SO in case you want share data across controller ?
                use service.
 - Serves as utility for controller.
+----------------------------------------------
+
+$location ->
+$route
+$http -> Ajax Request
+$interval -> setInterval
+$timeout  ->  setTimeout
+
+
+
+
 
 
 
