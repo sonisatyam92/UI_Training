@@ -1,9 +1,10 @@
 (function(){
     angular.module('myApp')
         .controller('ClockController', ClockController);
-    function  ClockController($scope, $interval ) {
+    function  ClockController($scope, $interval , $timeout) {
         $scope.clock={ hr:null, min:null,sec:null};
-        $scope.stopClock={ hr:null, min:null,sec:null};
+        $scope.timer={ min:null,sec:null};
+        $scope.message=null;
 
 
         function formatNumber(num){
@@ -41,19 +42,31 @@
             },1000);
         };
         $scope.doStopClock = function(){
+            $scope.timer.min = 1;
+            $scope.timer.sec= 60;
 
-            var min = 0;
-            var sec = 0;
+            var maxSec=60;
+            $interval(function(){
+                if($scope.timer.sec === 0 && $scope.timer.min ===0){
 
-            setup(parseDate(new Date()));
+                }else if($scope.timer.sec === 0 ){
+                    $scope.timer.sec = maxSec-1;
+                    $scope.timer.min = $scope.timer.min-1;
+                } else {
+                    $scope.timer.sec = $scope.timer.sec - 1;
+                }
+            },1000);
+
             $timeout(function(){
-                var json = parseDate(new Date());
-                setup(json);
-            },5000);
+                $scope.message= 'Time Expired';
+            },120000);
+
+
         };
 
 
         $scope.doClock();
+        $scope.doStopClock();
 
     }
 })();
