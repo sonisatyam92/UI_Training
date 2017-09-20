@@ -1,3 +1,29 @@
 <div ng-controller="LoginController">
-    Hi
+    <div >
+        <div class="login-main">
+            <div class="header">
+                <span class="split-line"></span>
+                <div class="header">
+                    <p class="head-line" >Social wire</p>
+                </div>
+            </div>
+            <div class="login-box ">
+                <p ng-show="hasError" class="alert label-danger error-txt">
+                 <span class="fa fa-exclamation-circle"></span>
+                    {{errorMsg}}
+                 <span ng-click="clearErrorMsg()" class="pull-right fa fa-close cancel-icon-btn"></span>
+                </p>
+                <form class="form form-group col-md-12"  action="#">
+                    <input ng-model="username" class="form-ele form-control"  placeholder="User Name"/>
+                    <input ng-model="password" class="form-ele form-control" type="password" placeholder="Password">
+                    <a   ng-click="onLogin()" class="btn btn-primary form-btn"  id="loginBtn"  >login</a>
+                </form>
+                <span class="register">
+                Not Registered?
+                <span class="create-link"><a>Create an account</a></span>
+            </span>
+            </div>
+        </div>
+
+    </div>
 </div>
