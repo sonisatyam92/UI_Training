@@ -1,6 +1,6 @@
 (function(){
     angular.module('myApp')
-        .controller('ClockController', ClockController);
+        .controller('ClockController',ClockController);
     function  ClockController($scope, $interval , $timeout) {
         $scope.clock={ hr:null, min:null,sec:null};
         $scope.timer={ min:null,sec:null};
