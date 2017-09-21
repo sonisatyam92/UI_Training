@@ -4,8 +4,9 @@
     angular.module('app')
         .controller('LoginController', LoginController);
 
-    function LoginController($scope, $http){
+    function LoginController($scope, LoginService, MessageService){
         var vm = $scope;
+        var locale = vm.locale = MessageService.msg();
 
         vm.username ="";
         vm.password="";
@@ -14,9 +15,21 @@
 
         vm.onLogin = function(){
             if(vm.username && vm.password){
+                LoginService.getLoginData()
+                    .then(function(res){
+                    var success = false;
+                    for(var i = 0 ; i<res.data.length; i++){
+                        var data = res.data[i];
+                        success = (data.username === vm.username && data.password === vm.password);
+                    }
+                    if(!success)
+                        vm.showErrorMsg(locale.invalidLogin);
+                },function(){
+                    vm.showErrorMsg(locale.serverErr);
+                });
 
             }else {
-               vm.showErrorMsg("Username and Password fields are mandatory.");
+               vm.showErrorMsg(locale.invalidLoginFields);
             }
         };
 
@@ -27,7 +40,9 @@
         vm.clearErrorMsg = function(){
             vm.hasError = false;
             vm.errorMsg = null;
-        }
+        };
+
+
 
     }
 })();

@@ -1,12 +1,7 @@
 <div ng-controller="LoginController">
     <div >
         <div class="login-main">
-            <div class="header">
-                <span class="split-line"></span>
-                <div class="header">
-                    <p class="head-line" >Social wire</p>
-                </div>
-            </div>
+            <ng-include src="'social-network/header.html'"></ng-include>
             <div class="login-box ">
                 <p ng-show="hasError" class="alert label-danger error-txt">
                  <span class="fa fa-exclamation-circle"></span>
@@ -14,13 +9,13 @@
                  <span ng-click="clearErrorMsg()" class="pull-right fa fa-close cancel-icon-btn"></span>
                 </p>
                 <form class="form form-group col-md-12"  action="#">
-                    <input ng-model="username" class="form-ele form-control"  placeholder="User Name"/>
-                    <input ng-model="password" class="form-ele form-control" type="password" placeholder="Password">
-                    <a   ng-click="onLogin()" class="btn btn-primary form-btn"  id="loginBtn"  >login</a>
+                    <input ng-model="username" class="form-ele form-control"  placeholder="{{locale.username}}"/>
+                    <input ng-model="password" class="form-ele form-control" type="password" placeholder="{{locale.password}}">
+                    <a   ng-click="onLogin()" class="btn btn-primary form-btn"  id="loginBtn"  >{{locale.login}}</a>
                 </form>
                 <span class="register">
-                Not Registered?
-                <span class="create-link"><a>Create an account</a></span>
+                {{locale.notRegistered}}?
+                <span class="create-link"><a>{{locale.createAnAccount}}</a></span>
             </span>
             </div>
         </div>

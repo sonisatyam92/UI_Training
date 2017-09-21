@@ -1,0 +1,11 @@
+<div  ng-controller="LocaleController" class="header">
+    <span class="split-line"></span>
+    <div class="header">
+        <p class="head-line" >{{locale.heading}}</p>
+        <span class="pull-right">
+            <select  ng-change="changeLocale()" ng-model="selectedLocale" >
+                <option ng-repeat="each in list" value="{{each}}">{{each}}</option>
+            </select>
+        </span>
+    </div>
+</div>
