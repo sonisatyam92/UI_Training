@@ -7,8 +7,9 @@
         var locale = MessageService.msg();
 
         var getLoginData = function(){
-            return $http.get('data/login1.json');
+            return $http.get('data/login.json');
         };
+
 
         return {
             getLoginData : getLoginData

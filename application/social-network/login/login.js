@@ -4,7 +4,7 @@
     angular.module('app')
         .controller('LoginController', LoginController);
 
-    function LoginController($scope, LoginService, MessageService){
+    function LoginController($scope, LoginService, MessageService, $location, $window){
         var vm = $scope;
         var locale = vm.locale = MessageService.msg();
 
@@ -21,6 +21,8 @@
                     for(var i = 0 ; i<res.data.length; i++){
                         var data = res.data[i];
                         success = (data.username === vm.username && data.password === vm.password);
+
+                        $window.location.href = $location.absUrl().replace('Login','Home/'+data.userId);
                     }
                     if(!success)
                         vm.showErrorMsg(locale.invalidLogin);

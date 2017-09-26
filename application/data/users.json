@@ -1,5 +1,9 @@
 [
   {
-    us
+    "name" : "Satyam Soni",
+    "age" : "25",
+    "gender" : "M",
+    "userId" : "1"
+
   }
 ]
