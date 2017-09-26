@@ -4,7 +4,7 @@
     angular.module('app')
         .controller('LoginController', LoginController);
 
-    function LoginController($scope, LoginService, MessageService, $location, $window){
+    function LoginController($scope, LoginService, MessageService, $location, $window, UserService){
         var vm = $scope;
         var locale = vm.locale = MessageService.msg();
 
@@ -12,6 +12,10 @@
         vm.password="";
         vm.errorMsg="";
         vm.hasError=false;
+
+        if(UserService.getCurrentUser()){
+            $window.location.href = $location.absUrl().replace('Login','Home/'+UserService.getCurrentUser().userId);
+        }
 
         vm.onLogin = function(){
             if(vm.username && vm.password){

@@ -1,19 +1,19 @@
 [
   {
     "name" : "Home",
-    "link" : "Home"
+    "link" : "/#/Home"
   },
   {
     "name":"News Feed",
-    "link": "News"
+    "link": "/News"
   },
   {
     "name" : "Friends",
-    "link": "Friends"
+    "link": "/Friends"
   },
   {
     "name" : "Messages",
-    "link" : "Messages"
+    "link" : "/Messages"
   },
   {
     "name" : "My Account",

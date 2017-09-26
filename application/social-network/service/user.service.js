@@ -31,8 +31,11 @@
         getUsers();
         return {
             getUserById : getUserById,
-            setCurrentUser : function (user) {
-                currentUser = user;
+            setCurrentUser : function (userId) {
+                currentUser = getUserById(userId);
+            },
+            getCurrentUser : function(){
+                return currentUser;
             }
         }
     }

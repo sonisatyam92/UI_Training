@@ -2,7 +2,20 @@
     <div >
         <div class="login-main">
             <ng-include src="'social-network/header.html'"></ng-include>
-            Home
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-2 table-bordered" ng-controller="NavigationController">
+                <ng-include src="'social-network/nav/nav.html'"></ng-include>
+            </div>
+            <div class="col-md-5">
+                Posts
+            </div>
+            <div class="col-md-3">
+                Feeds
+            </div>
+            <div class="col-md-2">
+                Users
+            </div>
         </div>
 
     </div>
