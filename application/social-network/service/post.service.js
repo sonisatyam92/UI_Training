@@ -10,7 +10,7 @@
 
         return {
             getPosts : function (){
-               return $http.get('data/post.json')
+               return $http.get('data/posts.json')
                     ;
             }
         }

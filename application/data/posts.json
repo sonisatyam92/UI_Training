@@ -23,6 +23,28 @@
         "shares" :[
 
         ]
+      },
+      {
+        "id":"POST_2",
+        "title" : "",
+        "text" : "Second Post of mine",
+        "type" : "text",
+        "user" : "Satyam Soni",
+        "time" : 1506479178671,
+        "comments" : [
+            {
+              "id" : "COMM_2",
+              "text" :"Hey !!",
+              "user" : "Aporoop",
+              "time" : 1506485179671
+            }
+        ],
+        "likes" :[
+
+        ],
+        "shares" :[
+
+        ]
       }
     ]
   }

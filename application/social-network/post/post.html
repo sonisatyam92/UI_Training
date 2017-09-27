@@ -7,6 +7,14 @@
             <div ng-show="post.type=='text';" class="panel-body">
                 {{post.text}}
             </div>
+            <div ng-show="post.type=='text';" class="panel-body">
+                Comments
+                <div ng-repeat="comment in  post.comments">
+                    <h6 class="text">{{comment.user}} on <span >{{ comment.time | date: 'fullDate' }}</span></h6>
+                    {{comment.text}}
+                </div>
+            </div>
+
         </div>
     </div>
 
