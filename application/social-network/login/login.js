@@ -4,7 +4,7 @@
     angular.module('app')
         .controller('LoginController', LoginController);
 
-    function LoginController($scope, LoginService, MessageService, $location, $window, UserService){
+    function LoginController($scope, LoginService, MessageService, $location, $window, UserService, LocalStorageService){
         var vm = $scope;
         var locale = vm.locale = MessageService.msg();
 
@@ -13,8 +13,8 @@
         vm.errorMsg="";
         vm.hasError=false;
 
-        if(UserService.getCurrentUser()){
-            $window.location.href = $location.absUrl().replace('Login','Home/'+UserService.getCurrentUser().userId);
+        if(LocalStorageService.get('userId')){
+            $window.location.href = $location.absUrl().replace('Login','Home/'+LocalStorageService.get('userId'));
         }
 
         vm.onLogin = function(){
@@ -25,7 +25,7 @@
                     for(var i = 0 ; i<res.data.length; i++){
                         var data = res.data[i];
                         success = (data.username === vm.username && data.password === vm.password);
-
+                            LocalStorageService.set('userId', data.userId);
                         $window.location.href = $location.absUrl().replace('Login','Home/'+data.userId);
                     }
                     if(!success)

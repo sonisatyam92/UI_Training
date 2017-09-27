@@ -1,0 +1,13 @@
+<div class="col-md-12">
+    <div  ng-repeat="post in posts">
+        <div class="panel">
+
+            <h4 ng-show="post.type=='multimedia'" class="panel-title">{{post.title}}</h4>
+            <h4 ng-show="post.type=='text'" class="panel-title">{{post.user}} on <span >{{ post.time | date: 'fullDate' }}</span></h4>
+            <div ng-show="post.type=='text';" class="panel-body">
+                {{post.text}}
+            </div>
+        </div>
+    </div>
+
+</div>

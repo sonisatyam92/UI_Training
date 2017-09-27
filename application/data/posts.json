@@ -1,0 +1,29 @@
+{
+
+  "1":{
+    "posts":[
+      {
+        "id":"POST_1",
+        "title" : "",
+        "text" : "Hello This is first post.",
+        "type" : "text",
+        "user" : "Satyam Soni",
+        "time" : 1506479178671,
+        "comments" : [
+            {
+              "id" : "COMM_1",
+              "text" :"Hey Satyam",
+              "user" : "Aporoop",
+              "time" : 1506485179671
+            }
+        ],
+        "likes" :[
+
+        ],
+        "shares" :[
+
+        ]
+      }
+    ]
+  }
+}

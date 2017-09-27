@@ -1,5 +1,5 @@
 <div class="col-md-12">
-    <ul class="" ng-repeat="menu in navmenu">
-        <li><a href="#{{menu.link}}">{{menu.name}}</a></li>
+    <ul class="" ng-mode="menu" ng-repeat="menu in navmenu">
+        <li><a href="#" ng-click="onClickMenu(menu)" >{{menu.name}}</a></li>
     </ul>
 </div>
