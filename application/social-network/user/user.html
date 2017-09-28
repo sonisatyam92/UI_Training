@@ -1,0 +1,10 @@
+<div class="col-md-12">
+    <table class="table table-responsive table-bordered table-striped">
+        <tr ng-repeat="user in users">
+            <td>
+                <span ng-class="getStatusClass(user)"></span>
+                {{user.name}}
+            </td>
+        </tr>
+    </table>
+</div>

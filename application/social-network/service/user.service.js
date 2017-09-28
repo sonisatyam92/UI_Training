@@ -7,14 +7,8 @@
         var users = [];
         var currentUser = null;
         var getUsers  = function(){
-            $http.get('data/users.json')
-                .then(function(resp){
-                    var i = -1;
-                    var data = resp.data;
-                    while(++i < data.length){
-                        users.push(data[i]);
-                    }
-                })
+            return $http.get('data/users.json');
+
         };
 
         var getUserById = function(userId){
@@ -28,8 +22,15 @@
         };
 
 
-        getUsers();
+        getUsers().then(function(resp){
+            var i = -1;
+            var data = resp.data;
+            while(++i < data.length){
+                users.push(data[i]);
+            }
+        });
         return {
+            getUsers : getUsers,
             getUserById : getUserById,
             setCurrentUser : function (userId) {
                 currentUser = getUserById(userId);

@@ -3,7 +3,49 @@
     "name" : "Satyam Soni",
     "age" : "25",
     "gender" : "M",
-    "userId" : "1"
+    "userId" : "1",
+    "status" :"Online"
+
+  },
+  {
+    "name" : "Aporoop",
+    "age" : "25",
+    "gender" : "M",
+    "userId" : "1",
+    "status" :"Online"
+
+  },
+  {
+    "name" : "James",
+    "age" : "25",
+    "gender" : "M",
+    "userId" : "1",
+    "status" :"Online"
+
+  },
+  {
+    "name" : "John",
+    "age" : "25",
+    "gender" : "M",
+    "userId" : "1",
+    "status" :"Offline"
+
+  },
+  {
+    "name" : "Rahul",
+    "age" : "25",
+    "gender" : "M",
+    "userId" : "1",
+    "status" :"Busy"
+
+  },
+  {
+    "name" : "Mark",
+    "age" : "25",
+    "gender" : "M",
+    "userId" : "1",
+    "status" :"Leave"
 
   }
+
 ]

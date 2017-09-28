@@ -1,0 +1,14 @@
+<div class="col-md-12">
+    <div class="panel" ng-repeat="feed in feeds">
+        <p class="panel-title">
+            <a href="{{feed.url}}" target="_blank">{{feed.title}}</a>
+        </p>
+        <div class="panel-body">
+            {{feed.description}}
+        </div>
+        <div class="panel-footer">
+            - {{ feed.publishedAt | date:'dd MMM yyyy, HH:mm:'}}<br/>
+            - By {{feed.author}}
+        </div>
+    </div>
+</div>

@@ -106,3 +106,15 @@ body {
 .cancel-icon-btn{
     cursor: pointer;
 }
+.online{
+    color:limegreen;
+}
+.offline{
+    color:lightcyan;
+}
+.buzy{
+    color : darkred;
+}
+.leave{
+    color:orange;
+}

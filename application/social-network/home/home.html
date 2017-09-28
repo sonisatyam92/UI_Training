@@ -10,11 +10,11 @@
             <div class="col-md-5 table-bordered" ng-controller="PostController">
                 <ng-include src="'social-network/post/post.html'"></ng-include>
             </div>
-            <div class="col-md-3">
-                Feeds
+            <div class="col-md-3 table-bordered" ng-controller="FeedController">
+                <ng-include src="'social-network/feed/feed.html'"></ng-include>
             </div>
-            <div class="col-md-2">
-                Users
+            <div class="col-md-2 " ng-controller="UserController">
+                <ng-include src="'social-network/user/user.html'"></ng-include>
             </div>
         </div>
 
